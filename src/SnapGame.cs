@@ -24,7 +24,6 @@ namespace CardGames
 		
 		private static void HandleUserInput(Snap myGame)
 		{
-<<<<<<< HEAD
 			//Fetch the next batch of UI interaction
 			SwinGame.ProcessEvents();
 
@@ -32,21 +31,14 @@ namespace CardGames
 			{
 				myGame.Start();
 			}
-		}
-=======
-			 //Fetch the next batch of UI interaction
-			 SwinGame.ProcessEvents();
-			 if (SwinGame.KeyTyped (KeyCode.vk_SPACE))
-			 {
-				myGame.FlipNextCard ();
-			 }
+		
+
 			 if (myGame.IsStarted)
 			 {
-				 if ( SwinGame.KeyTyped (KeyCode.vk_LSHIFT) &&
-				 SwinGame.KeyTyped (KeyCode.vk_RSHIFT))
+				 if ( SwinGame.KeyTyped (KeyCode.vk_LSHIFT) && SwinGame.KeyTyped (KeyCode.vk_RSHIFT))
 				 {
-					SwinGame.LoadSoundEffectNamed ("Slap", "slap.wav");
-					SwinGame.PlaySoundEffect ("Slap");
+					//SwinGame.LoadSoundEffectNamed ("Slap", "slap.wav");
+					//SwinGame.PlaySoundEffect ("Slap");
 				 }
 				 else if (SwinGame.KeyTyped (KeyCode.vk_LSHIFT))
 				 {
@@ -60,10 +52,6 @@ namespace CardGames
 		 }
 		
 		
-		
-		
-		
->>>>>>> add-player-hit
 
 		/// <summary>
 		/// Draws the game to the Window.

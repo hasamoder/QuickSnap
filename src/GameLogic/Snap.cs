@@ -156,12 +156,10 @@ namespace CardGames.GameLogic
 			}
 			// stop the game...
 			_started = false;
-<<<<<<< HEAD
 			_gameTimer.Stop();
 		}
-=======
-		 }
->>>>>>> add-player-hit
+
+		
 	
 		#region Snap Game Unit Tests
 		#if DEBUG
